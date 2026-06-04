@@ -1,6 +1,7 @@
 import { Work, WorkContent, WorksResult } from "@/types/work";
 import { createClient } from "microcms-js-sdk";
 
+// 関数内ではなくモジュール読み込み時にチェックすることで、起動時に即座にエラーを検出できる
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
   throw new Error("MICROCMS_SERVICE_DOMAIN is required");
 }
@@ -16,6 +17,7 @@ export const client = createClient({
 
 export const getWorks = async (): Promise<WorksResult> => {
   try {
+    // fields で必要なフィールドのみ取得し、レスポンスサイズを削減する
     const data = await client.getList<WorkContent>({
       endpoint: "works",
       queries: {
@@ -39,27 +41,4 @@ export const getWorks = async (): Promise<WorksResult> => {
     return { ok: false };
   }
 
-  // try {
-  //   const data = await client.get<MicrocmsResponse>({
-  //     endpoint: "works",
-  //     queries: {
-  //       fields: "id,title,description,skills,eyecatch.url,github,url",
-  //     },
-  //   });
-  //   if (!data.contents) {
-  //     throw new Error("コンテンツがありません");
-  //   }
-  //   return data.contents.map((content: MicrocmsContent) => ({
-  //     id: content.id,
-  //     title: content.title,
-  //     description: content.description,
-  //     skills: content.skills.map((skill) => skill.skillName),
-  //     image: content.eyecatch.url,
-  //     github: content.github,
-  //     url: content.url,
-  //   }));
-  // } catch (error) {
-  //   console.error("Error:", error);
-  //   return [];
-  // }
 };

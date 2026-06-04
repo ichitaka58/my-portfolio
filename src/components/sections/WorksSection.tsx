@@ -1,14 +1,11 @@
 import { Badge } from "../ui/badge";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
-  CardHeader,
   CardTitle,
 } from "../ui/card";
 import { getWorks } from "@/lib/microcms";
-import Link from "next/link";
 import Image from "next/image";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -19,7 +16,7 @@ const WorksSection = async () => {
   const result = await getWorks();
 
   return (
-    <section id="works" className="bg-slate-200 h-screen">
+    <section id="works" className="bg-slate-200 py-10">
       <div className="max-w-4xl mx-auto p-10">
         <h2 className="text-2xl font-bold">Works</h2>
         {!result.ok ? (
@@ -31,29 +28,24 @@ const WorksSection = async () => {
             {result.works.map((work) => (
               <Card
                 key={work.id}
-                className="relative mx-auto w-full max-w-xs min-w-64 h-88 pt-0"
+                className="relative mx-auto w-full max-w-xs min-w-64 h-92 pt-0"
               >
-                {/* <div className="absolute inset-0 z-30 aspect-video" />
-                <img
-                  src={work.image}
-                  alt={work.title}
-                  className="relative z-20 aspect-video w-full object-cover"
-                /> */}
                 <div className="relative aspect-video w-full">
                   <Image
                     src={work.image}
                     alt={work.title}
                     fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
                     className="object-cover"
                   />
                 </div>
-                <CardContent>
+                <CardContent className="flex flex-col flex-1">
                   <CardTitle className="font-bold mb-1">{work.title}</CardTitle>
-                  <CardDescription className="text-[11px] mb-1">
+                  <CardDescription className="text-[11px] mb-2">
                     {work.description}
                   </CardDescription>
-                  <div className="flex flex-col">
-                    <div className="flex gap-1 flex-wrap">
+                  <div className="flex flex-col flex-1">
+                    <div className="flex gap-1 flex-wrap mb-2">
                       {work.skills.map((skill) => (
                         <Badge
                           key={skill}
@@ -63,7 +55,7 @@ const WorksSection = async () => {
                         </Badge>
                       ))}
                     </div>
-                    <div className="flex gap-2 text-xs">
+                    <div className="flex gap-2 text-xs mt-auto pt-2">
                       {work.github && (
                         <a
                           href={work.github}
