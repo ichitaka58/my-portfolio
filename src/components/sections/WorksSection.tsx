@@ -16,9 +16,9 @@ const WorksSection = async () => {
   const result = await getWorks();
 
   return (
-    <section id="works" className="bg-slate-200 py-10">
+    <section id="works" className="bg-muted py-10">
       <div className="max-w-4xl mx-auto p-10">
-        <h2 className="text-2xl font-bold">Works</h2>
+        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">Works</h2>
         {!result.ok ? (
           <p>作品が取得できませんでした。再度、時間をおいてお試しください。</p>
         ) : result.works.length === 0 ? (
@@ -28,7 +28,7 @@ const WorksSection = async () => {
             {result.works.map((work) => (
               <Card
                 key={work.id}
-                className="relative mx-auto w-full max-w-xs min-w-64 h-92 pt-0"
+                className="relative mx-auto w-full max-w-xs min-w-64 h-92 pt-0 bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative aspect-video w-full">
                   <Image
@@ -49,7 +49,7 @@ const WorksSection = async () => {
                       {work.skills.map((skill) => (
                         <Badge
                           key={skill}
-                          className="bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-300 shadow text-xs"
+                          className="bg-primary/10 text-primary shadow text-xs"
                         >
                           {skill}
                         </Badge>
