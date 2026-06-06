@@ -1,4 +1,4 @@
-import { Work, WorkContent, WorksResult } from "@/types/work";
+import { WorkContent, WorksResult } from "@/types/work";
 import { createClient } from "microcms-js-sdk";
 
 // 関数内ではなくモジュール読み込み時にチェックすることで、起動時に即座にエラーを検出できる
@@ -10,11 +10,13 @@ if (!process.env.MICROCMS_API_KEY) {
   throw new Error("MICROCMS_API_KEY is required");
 }
 
+// Client SDKの初期化
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
   apiKey: process.env.MICROCMS_API_KEY,
 });
 
+// microCMSから制作実績(works)一覧を取得する
 export const getWorks = async (): Promise<WorksResult> => {
   try {
     // fields で必要なフィールドのみ取得し、レスポンスサイズを削減する
