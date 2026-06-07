@@ -18,13 +18,17 @@ const WorksSection = async () => {
   return (
     <section id="works" className="bg-muted py-10">
       <div className="max-w-4xl mx-auto p-10">
-        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">Works</h2>
+        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
+          Works
+        </h2>
+        <p className="text-muted-foreground mb-6 pl-4">これまでの制作実績の一部です。</p>
+
         {!result.ok ? (
           <p>作品が取得できませんでした。再度、時間をおいてお試しください。</p>
         ) : result.works.length === 0 ? (
           <p>表示できる作品がありません。</p>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 justify-center">
             {result.works.map((work) => (
               <Card
                 key={work.id}

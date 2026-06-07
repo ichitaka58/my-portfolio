@@ -9,7 +9,7 @@ const Nav = () => {
           <Link href="#" className="text-primary font-semibold">ichitaka58</Link>
           <div className="flex items-center gap-4 font-semibold">
             <Link href="#about">About</Link>
-            <Link href="#skills">skills</Link>
+            <Link href="#skills">Skills</Link>
             <Link href="#works">Works</Link>
             <Link href="#output">Output</Link>
             <Link href="#contact">Contact</Link>

@@ -32,9 +32,8 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="bg-background py-10">
       <div className="max-w-4xl mx-auto p-10">
-        <p className="text-muted-foreground font-semibold text-sm ml-4">Skills</p>
         <h2 className="text-xl font-bold border-l-4 border-primary pl-3 mb-6">
-          スキル:学習経験
+          Skills & Learning
         </h2>
         <div className="flex flex-col sm:flex-row items-center flex-wrap gap-8 pl-4 mb-8">
           <Image
