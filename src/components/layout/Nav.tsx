@@ -1,18 +1,102 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import { Menu } from "lucide-react";
+import { Button } from "../ui/button";
 
 const Nav = () => {
   return (
     <section className="sticky top-0 z-50 bg-card/80 backdrop-blur-sm border-b border-border px-6 py-4">
       <nav className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between">
-          <Link href="#" className="text-primary font-semibold">ichitaka58</Link>
-          <div className="flex items-center gap-4 font-semibold">
-            <Link href="#about">About</Link>
-            <Link href="#skills">Skills</Link>
-            <Link href="#works">Works</Link>
-            <Link href="#output">Output</Link>
-            <Link href="#contact">Contact</Link>
+          <Link href="#" className="text-primary font-semibold">
+          <Image src="/ichitaka58_logo_navy.png" alt="ichitaka58_logo" width={120} height={30} />
+            {/* ichitaka58 */}
+          </Link>
+          <div className="hidden sm:flex sm:items-center sm:gap-4 sm:font-semibold">
+            <Link
+              href="#about"
+              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+            >
+              About
+            </Link>
+            <Link
+              href="#skills"
+              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+            >
+              Skills
+            </Link>
+            <Link
+              href="#works"
+              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+            >
+              Works
+            </Link>
+            <Link
+              href="#output"
+              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+            >
+              Articles
+            </Link>
+            <Link
+              href="#contact"
+              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+            >
+              Contact
+            </Link>
+          </div>
+          <div className="sm:hidden no-print">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button>
+                  <Menu />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuGroup>
+                  <Link href="#">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      Top
+                    </DropdownMenuItem>
+                  </Link>
+                  <DropdownMenuSeparator />
+                  <Link href="#about">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      About
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="#skills">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      Skills
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="#works">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      Works
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="#output">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      Articles
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href="#contact" className="scroll-smooth">
+                    <DropdownMenuItem className="focus:bg-primary/50">
+                      Contact
+                    </DropdownMenuItem>
+                  </Link>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </nav>
