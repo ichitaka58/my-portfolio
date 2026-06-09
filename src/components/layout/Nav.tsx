@@ -19,41 +19,46 @@ const Nav = () => {
       <nav className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between">
           <Link href="#" className="text-primary font-semibold">
-          <Image src="/ichitaka58_logo_navy.png" alt="ichitaka58_logo" width={120} height={30} />
-            {/* ichitaka58 */}
+            <Image
+              src="/ichitaka58_logo_navy.png"
+              alt="ichitaka58_logo"
+              width={120}
+              height={30}
+            />
           </Link>
-          <div className="hidden sm:flex sm:items-center sm:gap-4 sm:font-semibold">
+          <div className="hidden sm:flex sm:items-center sm:gap-4 sm:font-semibold sm:text-secondary-foreground">
             <Link
               href="#about"
-              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+              className="hover:underline underline-offset-4 decoration-4 decoration-secondary"
             >
               About
             </Link>
             <Link
               href="#skills"
-              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+              className="hover:underline underline-offset-4 decoration-4 decoration-secondary"
             >
               Skills
             </Link>
             <Link
               href="#works"
-              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+              className="hover:underline underline-offset-4 decoration-4 decoration-secondary"
             >
               Works
             </Link>
             <Link
               href="#output"
-              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+              className="hover:underline underline-offset-4 decoration-4 decoration-secondary"
             >
               Articles
             </Link>
             <Link
               href="#contact"
-              className="hover:underline underline-offset-4 decoration-2 decoration-sky-200"
+              className="hover:underline underline-offset-4 decoration-4 decoration-secondary"
             >
               Contact
             </Link>
           </div>
+          {/* スマホサイズ ドロップダウンメニュー */}
           <div className="sm:hidden no-print">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -63,12 +68,6 @@ const Nav = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuGroup>
-                  <Link href="#">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      Top
-                    </DropdownMenuItem>
-                  </Link>
-                  <DropdownMenuSeparator />
                   <Link href="#about">
                     <DropdownMenuItem className="focus:bg-primary/50">
                       About
