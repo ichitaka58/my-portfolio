@@ -8,6 +8,8 @@ import SkillsSection from "@/components/sections/SkillsSection";
 import WorksSection from "@/components/sections/WorksSection";
 import { Button } from "@/components/ui/button";
 
+export const revalidate = 60;
+
 export default function Home() {
   return (
     <main>

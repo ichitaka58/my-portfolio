@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "ichitaka58 portfolio",
+  title: "ichitaka58's portfolio",
   description: "ichitaka58's Portfolio page",
 };
 
