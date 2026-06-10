@@ -6,7 +6,6 @@ import HeroSection from "@/components/sections/HeroSection";
 import OutputSection from "@/components/sections/OutputSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import WorksSection from "@/components/sections/WorksSection";
-import { Button } from "@/components/ui/button";
 
 export const revalidate = 60;
 
