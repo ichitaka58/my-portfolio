@@ -7,11 +7,9 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Menu } from "lucide-react";
-import { Button } from "../ui/button";
 
 const Nav = () => {
   return (
