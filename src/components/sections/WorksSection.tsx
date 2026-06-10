@@ -18,10 +18,13 @@ const WorksSection = async () => {
   return (
     <section id="works" className="bg-muted py-10">
       <div className="max-w-4xl mx-auto p-10">
+        <p className="text-sm font-bold text-muted-foreground ml-5">制作実績</p>
         <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
           Works
         </h2>
-        <p className="text-muted-foreground mb-6 pl-4">これまでの制作実績の一部です。</p>
+        <p className="text-muted-foreground mb-6 pl-4">
+          これまでの制作実績の一部です。
+        </p>
 
         {!result.ok ? (
           <p>作品が取得できませんでした。再度、時間をおいてお試しください。</p>

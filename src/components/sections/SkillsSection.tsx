@@ -1,38 +1,12 @@
 import Image from "next/image";
 
 const SkillsSection = () => {
-  // const SKILLS = [
-  //   {
-  //     id: "laravel",
-  //     skillName: "Laravel",
-  //     path: "/laravel-logolockup-rgb-red.svg",
-  //   },
-  //   {
-  //     id: "react",
-  //     skillName: "React",
-  //     path: "/react-logo.svg",
-  //   },
-  //   {
-  //     id: "typescript",
-  //     skillName: "TypeScript",
-  //     path: "/ts-lettermark-blue.svg",
-  //   },
-  //   {
-  //     id: "nextjs",
-  //     skillName: "Next.js",
-  //     path: "/nextjs-logotype-light-background.svg",
-  //   },
-  //   {
-  //     id: "github",
-  //     skillName: "GitHub",
-  //     path: "/GitHub_Lockup_Black.svg",
-  //   },
-  // ];
 
   return (
     <section id="skills" className="bg-background py-10">
       <div className="max-w-4xl mx-auto p-10">
-        <h2 className="text-xl font-bold border-l-4 border-primary pl-3 mb-6">
+        <p className="text-sm font-bold text-muted-foreground ml-5">学習経験</p>
+        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
           Skills & Learning
         </h2>
         <div className="flex flex-col sm:flex-row items-center flex-wrap gap-8 pl-4 mb-8">
@@ -72,7 +46,9 @@ const SkillsSection = () => {
             className="object-contain ml-4"
           />
         </div>
-        <p className="text-muted-foreground ml-4">このほか、Docker、Python..なども使っています。</p>
+        <p className="text-muted-foreground ml-4">
+          このほか、Docker、Python..なども使っています。
+        </p>
       </div>
     </section>
   );
