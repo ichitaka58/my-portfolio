@@ -23,8 +23,9 @@ const HeroSection = () => {
             <Image
               src="/ichitaka58_logo_navy.png"
               alt="ichitaka58_logo"
-              width={360}
-              height={100}
+              width={1805}
+              height={377}
+              style={{ width: "360px", height: "auto" }}
             />
           </h1>
         </div>

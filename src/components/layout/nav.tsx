@@ -20,8 +20,9 @@ const Nav = () => {
             <Image
               src="/ichitaka58_logo_navy.png"
               alt="ichitaka58_logo"
-              width={120}
-              height={30}
+              width={1805}
+              height={377}
+              style={{ width: "120px", height: "auto"}}
             />
           </Link>
           <div className="hidden sm:flex sm:items-center sm:gap-4 sm:font-semibold sm:text-secondary-foreground">
