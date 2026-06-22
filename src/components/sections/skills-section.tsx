@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const SkillsSection = () => {
 
   return (
@@ -10,43 +8,38 @@ const SkillsSection = () => {
           Skills & Learning
         </h2>
         <div className="flex flex-col sm:flex-row items-center flex-wrap gap-8 pl-4 mb-8">
-          <Image
+          <img
             src="/laravel-logolockup-rgb-red.svg"
             alt="laravel-logo"
             width={240}
-            height={80}
             className="object-cover"
           />
-          <Image
+          <img
             src="/react-logo.svg"
             alt="react-logo"
             width={100}
-            height={80}
             className="object-contain justify-items-center"
           />
-          <Image
+          <img
             src="/ts-lettermark-blue.svg"
             alt="typescript-logo"
             width={240}
-            height={80}
             className="object-contain ml-4"
           />
-          <Image
+          <img
             src="/nextjs-logotype-light-background.svg"
             alt="nextjs-logo"
             width={240}
-            height={80}
             className="object-contain ml-4"
           />
-          <Image
+          <img
             src="/GitHub_Lockup_Black.svg"
             alt="github-logo"
             width={240}
-            height={80}
             className="object-contain ml-4"
           />
         </div>
-        <p className="text-muted-foreground ml-4">
+        <p className="text-muted-foreground text-center">
           このほか、Docker、Python..なども使っています。
         </p>
       </div>
