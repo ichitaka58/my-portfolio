@@ -16,7 +16,7 @@ const WorksSection = async () => {
   const result = await getWorks();
 
   return (
-    <section id="works" className="bg-muted py-10">
+    <section id="works" className="bg-muted text-foreground py-10">
       <div className="max-w-4xl mx-auto p-10">
         <p className="text-sm font-bold text-muted-foreground ml-5">制作実績</p>
         <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
@@ -35,7 +35,7 @@ const WorksSection = async () => {
             {result.works.map((work) => (
               <Card
                 key={work.id}
-                className="relative mx-auto w-full max-w-xs min-w-64 h-92 pt-0 bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="relative mx-auto w-full max-w-xs min-w-64 h-92 pt-0 shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative aspect-video w-full">
                   <Image
@@ -56,7 +56,8 @@ const WorksSection = async () => {
                       {work.skills.map((skill) => (
                         <Badge
                           key={skill}
-                          className="bg-primary/10 text-primary shadow text-xs"
+                          variant="secondary"
+                          className="shadow text-xs"
                         >
                           {skill}
                         </Badge>
