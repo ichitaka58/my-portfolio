@@ -3,7 +3,7 @@ import { getArticles } from "@/lib/qiita";
 const OutputSection = async () => {
   const result = await getArticles()
   return (
-    <section id="output" className="bg-background py-10">
+    <section id="output" className="bg-background text-foreground py-10">
       <div className="max-w-4xl mx-auto p-10">
         <p className="text-sm font-bold text-muted-foreground ml-5">
           アウトプット
@@ -26,7 +26,7 @@ const OutputSection = async () => {
                 href={article.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 bg-white border border-border rounded-lg shadow hover:shadow-lg"
+                className="p-6 bg-card text-card-foreground border border-border rounded-lg shadow hover:shadow-lg"
               >
                 <p>{article.title}</p>
               </a>

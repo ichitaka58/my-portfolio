@@ -1,7 +1,7 @@
 const SkillsSection = () => {
 
   return (
-    <section id="skills" className="bg-background py-10">
+    <section id="skills" className="bg-background text-foreground py-10">
       <div className="max-w-4xl mx-auto p-10">
         <p className="text-sm font-bold text-muted-foreground ml-5">学習経験</p>
         <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
@@ -30,13 +30,13 @@ const SkillsSection = () => {
             src="/nextjs-logotype-light-background.svg"
             alt="nextjs-logo"
             width={240}
-            className="object-contain ml-4"
+            className="object-contain ml-4 dark:invert"
           />
           <img
             src="/GitHub_Lockup_Black.svg"
             alt="github-logo"
             width={240}
-            className="object-contain ml-4"
+            className="object-contain ml-4 dark:invert"
           />
         </div>
         <p className="text-muted-foreground text-center">
