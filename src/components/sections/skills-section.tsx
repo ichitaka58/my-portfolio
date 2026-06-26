@@ -10,31 +10,31 @@ const SkillsSection = () => {
         <div className="flex flex-col sm:flex-row items-center flex-wrap gap-8 pl-4 mb-8">
           <img
             src="/laravel-logolockup-rgb-red.svg"
-            alt="laravel-logo"
+            alt="Laravel"
             width={240}
             className="object-cover"
           />
           <img
             src="/react-logo.svg"
-            alt="react-logo"
+            alt="React"
             width={100}
             className="object-contain justify-items-center"
           />
           <img
             src="/ts-lettermark-blue.svg"
-            alt="typescript-logo"
+            alt="TypeScript"
             width={240}
             className="object-contain ml-4"
           />
           <img
             src="/nextjs-logotype-light-background.svg"
-            alt="nextjs-logo"
+            alt="Next.js"
             width={240}
             className="object-contain ml-4 dark:invert"
           />
           <img
             src="/GitHub_Lockup_Black.svg"
-            alt="github-logo"
+            alt="GitHub"
             width={240}
             className="object-contain ml-4 dark:invert"
           />

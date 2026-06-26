@@ -71,8 +71,9 @@ const WorksSection = async () => {
                           rel="noopener noreferrer"
                           className="flex items-center gap-0.5"
                         >
-                          <FaGithub size={14} />
+                          <FaGithub size={14} aria-hidden="true" />
                           <span>GitHub</span>
+                          <span className="sr-only">（新しいタブで開く）</span>
                         </a>
                       )}
                       {work.url && (
@@ -82,8 +83,9 @@ const WorksSection = async () => {
                           rel="noopener noreferrer"
                           className="flex items-center gap-0.5"
                         >
-                          <SquareArrowOutUpRight size={14} />
+                          <SquareArrowOutUpRight size={14} aria-hidden="true" />
                           <span>Demo</span>
+                          <span className="sr-only">（新しいタブで開く）</span>
                         </a>
                       )}
                     </div>

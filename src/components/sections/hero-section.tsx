@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-2 mb-10">
           <Image
             src="/ichitaka58_logo.png"
-            alt="logo"
+            alt="ichitaka58のアイコン"
             width={80}
             height={80}
             className="rounded-full aspect-square"
@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h1>
             <Image
               src="/ichitaka58_logo_navy.png"
-              alt="ichitaka58_logo"
+              alt="ichitaka58"
               width={1805}
               height={377}
               style={{ width: "360px", height: "auto" }}
