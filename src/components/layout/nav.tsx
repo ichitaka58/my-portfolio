@@ -13,13 +13,13 @@ import { Menu } from "lucide-react";
 
 const Nav = () => {
   return (
-    <section className="sticky top-0 z-50 bg-card backdrop-blur-sm border-b border-border px-6 py-4">
+    <header className="sticky top-0 z-50 bg-card backdrop-blur-sm border-b border-border px-6 py-4">
       <nav className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between">
           <Link href="#">
             <Image
               src="/ichitaka58_logo_navy.png"
-              alt="ichitaka58_logo"
+              alt="ichitaka58 - トップへ戻る"
               width={1805}
               height={377}
               style={{ width: "120px", height: "auto" }}
@@ -61,8 +61,8 @@ const Nav = () => {
           <div className="sm:hidden no-print">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button>
-                  <Menu />
+                <button aria-label="メニューを開く">
+                  <Menu aria-hidden="true" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -98,7 +98,7 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-    </section>
+    </header>
   );
 };
 

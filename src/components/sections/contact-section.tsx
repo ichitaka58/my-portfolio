@@ -19,8 +19,9 @@ const ContactSection = () => {
               href="https://github.com/ichitaka58"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHubプロフィール（新しいタブで開く）"
             >
-              <FaGithub />
+              <FaGithub aria-hidden="true" />
             </a>
           </div>
           <div className="w-8 h-8 bg-card text-card-foreground border border-border rounded flex items-center justify-center">
@@ -28,8 +29,9 @@ const ContactSection = () => {
               href="https://x.com/taka_ichi58"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="X（旧Twitter）プロフィール（新しいタブで開く）"
             >
-              <FaXTwitter />
+              <FaXTwitter aria-hidden="true" />
             </a>
           </div>
         </div>

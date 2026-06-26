@@ -29,6 +29,7 @@ const OutputSection = async () => {
                 className="p-6 bg-card text-card-foreground border border-border rounded-lg shadow hover:shadow-lg"
               >
                 <p>{article.title}</p>
+                <span className="sr-only">（新しいタブで開く）</span>
               </a>
             ))}
           </div>
