@@ -12,7 +12,8 @@ const AboutSection = () => {
           <p className="mb-2">
             放送局で主に番組編成、バックオフィス、マネジメントを経験。30年以上勤め2025年退社。
             <br />
-            起業家×エンジニア養成学校<span className="font-bold text-lg">G's</span>
+            起業家×エンジニア養成学校
+            <span className="font-bold text-lg">G's</span>
             （ジーズ：旧ジーズアカデミー）に入学、
             <br />
             毎日6〜11時間をプログラミング、アプリ開発に没頭し、2025年10月卒業。
@@ -41,10 +42,14 @@ const AboutSection = () => {
           </p>
           <p>
             <span className="font-semibold">✅趣 味</span>:
-            <span className="text-red-500 font-semibold text-lg pl-1">
+            <span className="text-red-500 font-semibold text-lg pl-2">
               森高千里
             </span>
-            さんの推し活
+            さんの推し活、ヒップホップ（24年間継続中）
+          </p>
+          <p>
+            <span className="font-semibold">✅特 技</span>:
+            <span className="pl-2">数独、キラーナンプレ（最速1分3秒）</span>
           </p>
         </div>
       </div>
