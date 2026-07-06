@@ -45,7 +45,7 @@ const AboutSection = () => {
             <span className="text-red-500 font-semibold text-lg pl-2">
               森高千里
             </span>
-            さんの推し活、ヒップホップ（24年間継続中）
+            さんの推し活、ヒップホップ（24年間継続中）、焼鳥
           </p>
           <p>
             <span className="font-semibold">✅特 技</span>:
