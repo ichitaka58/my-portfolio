@@ -16,7 +16,7 @@ const OutputSection = async () => {
         </p>
         {!result.ok ? (
           <p>Qiita記事が取得できませんでした</p>
-        ) : result.qiitaArticles.length < 0 ? (
+        ) : result.qiitaArticles.length === 0 ? (
           <p>表示できる記事がありません</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
