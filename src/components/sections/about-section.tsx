@@ -20,12 +20,12 @@ const AboutSection = () => {
             放送局で主に番組編成、バックオフィス、マネジメントを経験。30年以上勤め2025年退社。
             <br />
             起業家×エンジニア養成学校
-            <span className="font-bold text-lg">G's</span>
+            <span className="font-bold text-lg">G&apos;s</span>
             （ジーズ：旧ジーズアカデミー）に入学、
             <br />
             毎日6〜11時間をプログラミング、アプリ開発に没頭し、2025年10月卒業。
             <br />
-            その後も、独学＆G'sコミュニティーで学習を継続しています。これまでの経験とアプリ開発の学びを生かして誰かのお役に立つことが望みです。
+            その後も、独学＆G&apos;sコミュニティーで学習を継続しています。これまでの経験とアプリ開発の学びを生かして誰かのお役に立つことが望みです。
           </p>
           <p>
             最近では主に
@@ -43,7 +43,7 @@ const AboutSection = () => {
             <span className="font-semibold">✅今年度の目標</span>:
             <span className="pl-2">
               <span className="font-semibold">GitHub</span>の
-              <span className="text-lg font-semibold text-green-700">"草"</span>
+              <span className="text-lg font-semibold text-green-700">&quot;草&quot;</span>
               を絶やさないこと
             </span>
           </p>
