@@ -1,25 +1,25 @@
 import { Badge } from "../ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "../ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { getWorks } from "@/lib/microcms";
 import Image from "next/image";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
-
-
 const WorksSection = async () => {
   const result = await getWorks();
 
   return (
-    <section id="works" className="bg-muted text-foreground py-10">
+    <section
+      id="works"
+      aria-labelledby="works-heading"
+      className="bg-muted text-foreground py-10"
+    >
       <div className="max-w-4xl mx-auto p-10">
         <p className="text-sm font-bold text-muted-foreground ml-5">制作実績</p>
-        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6">
+        <h2
+          id="works-heading"
+          className="text-2xl font-bold border-l-4 border-primary pl-3 mb-6"
+        >
           Works
         </h2>
         <p className="text-muted-foreground mb-6 pl-4">

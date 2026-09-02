@@ -1,18 +1,26 @@
 import { getArticles } from "@/lib/qiita";
 
 const OutputSection = async () => {
-  const result = await getArticles()
+  const result = await getArticles();
   return (
-    <section id="output" className="bg-background text-foreground py-10">
+    <section
+      id="output"
+      aria-labelledby="output-heading"
+      className="bg-background text-foreground py-10"
+    >
       <div className="max-w-4xl mx-auto p-10">
         <p className="text-sm font-bold text-muted-foreground ml-5">
           アウトプット
         </p>
-        <h2 className="text-2xl font-bold border-l-4 border-primary pl-3 mb-4">
+        <h2
+          id="output-heading"
+          className="text-2xl font-bold border-l-4 border-primary pl-3 mb-4"
+        >
           Articles
         </h2>
         <p className="text-muted-foreground mb-6 pl-4">
-          <span className="text-[#55c500] font-bold">Qiita</span>に投稿した記事一覧です
+          <span className="text-[#55c500] font-bold">Qiita</span>
+          に投稿した記事一覧です
         </p>
         {!result.ok ? (
           <p>Qiita記事が取得できませんでした</p>
@@ -37,6 +45,6 @@ const OutputSection = async () => {
       </div>
     </section>
   );
-}
+};
 
-export default OutputSection
+export default OutputSection;

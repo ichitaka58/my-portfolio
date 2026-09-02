@@ -5,12 +5,15 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
+      aria-labelledby="contact-heading"
       className="bg-muted text-foreground h-100 border-b border-border"
     >
       <div className="max-w-4xl mx-auto p-10 h-full flex flex-col justify-center items-center gap-4">
         <div className="flex flex-col items-center">
           <p className="text-muted-foreground text-sm font-semibold">CONTACT</p>
-          <h2 className="text-2xl font-bold">お問い合わせ</h2>
+          <h2 id="contact-heading" className="text-2xl font-bold">
+            お問い合わせ
+          </h2>
         </div>
         <p>お仕事・勉強会など、お気軽にお問い合わせください。</p>
         <div className="flex gap-4">
@@ -38,6 +41,6 @@ const ContactSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default ContactSection
+export default ContactSection;
