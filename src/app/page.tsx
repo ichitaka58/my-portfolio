@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/footer";
-import Nav from "@/components/layout/nav";
+import Header from "@/components/layout/header";
 import AboutSection from "@/components/sections/about-section";
 import ContactSection from "@/components/sections/contact-section";
 import HeroSection from "@/components/sections/hero-section";
@@ -11,16 +11,17 @@ export const revalidate = 60;
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <WorksSection />
-      <OutputSection />
-      <ContactSection />
+    <>
+      <Header />
+      <main id="main" tabIndex={-1} className="flex-1">
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <WorksSection />
+        <OutputSection />
+        <ContactSection />
+      </main>
       <Footer />
-
-    </main>
+    </>
   );
 }

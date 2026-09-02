@@ -11,20 +11,20 @@ import {
 } from "../ui/dropdown-menu";
 import { Menu } from "lucide-react";
 
-const Nav = () => {
+const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card backdrop-blur-sm border-b border-border px-6 py-4">
-      <nav className="max-w-4xl mx-auto">
-        <div className="flex items-center justify-between">
-          <Link href="#">
-            <Image
-              src="/ichitaka58_logo_navy.png"
-              alt="ichitaka58 - トップへ戻る"
-              width={1805}
-              height={377}
-              style={{ width: "120px", height: "auto" }}
-            />
-          </Link>
+      <div className="max-w-4xl mx-auto flex items-center justify-between">
+        <Link href="#">
+          <Image
+            src="/ichitaka58_logo_navy.png"
+            alt="ichitaka58 - トップへ戻る"
+            width={1805}
+            height={377}
+            style={{ width: "120px", height: "auto" }}
+          />
+        </Link>
+        <nav aria-label="メインナビゲーション">
           <div className="hidden sm:flex sm:items-center sm:gap-4 sm:font-semibold sm:text-card-foreground">
             <Link
               href="#about"
@@ -67,39 +67,29 @@ const Nav = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuGroup>
-                  <Link href="#about">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      About
-                    </DropdownMenuItem>
-                  </Link>
-                  <Link href="#skills">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      Skills
-                    </DropdownMenuItem>
-                  </Link>
-                  <Link href="#works">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      Works
-                    </DropdownMenuItem>
-                  </Link>
-                  <Link href="#output">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      Articles
-                    </DropdownMenuItem>
-                  </Link>
-                  <Link href="#contact">
-                    <DropdownMenuItem className="focus:bg-primary/50">
-                      Contact
-                    </DropdownMenuItem>
-                  </Link>
+                  <DropdownMenuItem asChild className="focus:bg-primary/50">
+                    <Link href="#about">About</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="focus:bg-primary/50">
+                    <Link href="#skills">Skills</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="focus:bg-primary/50">
+                    <Link href="#works">Works</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="focus:bg-primary/50">
+                    <Link href="#output">Articles</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="focus:bg-primary/50">
+                    <Link href="#contact">Contact</Link>
+                  </DropdownMenuItem>
                 </DropdownMenuGroup>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 };
 
-export default Nav;
+export default Header;
