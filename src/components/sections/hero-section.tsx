@@ -5,6 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
+      aria-label="トップ"
       className="bg-linear-to-br from-background via-background to-indigo-100/60 h-screen flex flex-col justify-center"
     >
       <div className="max-w-4xl mx-auto p-10 flex flex-col justify-center items-center">
