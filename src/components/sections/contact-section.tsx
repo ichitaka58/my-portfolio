@@ -6,9 +6,9 @@ const ContactSection = () => {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="bg-muted text-foreground h-100 border-b border-border"
+      className="bg-muted text-foreground min-h-100 flex flex-col border-b border-border"
     >
-      <div className="max-w-4xl mx-auto p-10 h-full flex flex-col justify-center items-center gap-4">
+      <div className="max-w-4xl mx-auto p-10 flex flex-col justify-center items-center grow gap-4">
         <div className="flex flex-col items-center">
           <p className="text-muted-foreground text-sm font-semibold">CONTACT</p>
           <h2 id="contact-heading" className="text-2xl font-bold">
