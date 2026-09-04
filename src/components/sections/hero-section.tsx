@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section
       id="hero"
       aria-label="トップ"
-      className="bg-linear-to-br from-background via-background to-indigo-100/60 min-h-screen flex flex-col justify-center"
+      className="bg-linear-to-br from-background via-background to-indigo-100/50 dark:to-indigo-950/30 min-h-screen flex flex-col justify-center"
     >
       <div className="max-w-4xl mx-auto p-10 flex flex-col justify-center items-center">
         <Badge variant="secondary" className="font-semibold mb-2">

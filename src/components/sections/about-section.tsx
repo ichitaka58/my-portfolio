@@ -43,13 +43,13 @@ const AboutSection = () => {
             <span className="font-semibold">✅今年度の目標</span>:
             <span className="pl-2">
               <span className="font-semibold">GitHub</span>の
-              <span className="text-lg font-semibold text-green-700">&quot;草&quot;</span>
+              <span className="text-lg font-semibold text-success">&quot;草&quot;</span>
               を絶やさないこと
             </span>
           </p>
           <p>
             <span className="font-semibold">✅趣 味</span>:
-            <span className="text-red-500 font-semibold text-lg pl-2">
+            <span className="text-red-600 dark:text-red-400 font-semibold text-lg pl-2">
               森高千里
             </span>
             さんの推し活、ヒップホップ（24年間継続中）、焼鳥

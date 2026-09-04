@@ -19,7 +19,7 @@ const OutputSection = async () => {
           Articles
         </h2>
         <p className="text-muted-foreground mb-6 pl-4">
-          <span className="text-[#55c500] font-bold">Qiita</span>
+          <span className="text-[#478000] dark:text-[#7cc800] font-bold">Qiita</span>
           に投稿した記事一覧です
         </p>
         {!result.ok ? (
