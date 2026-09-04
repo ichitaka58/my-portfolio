@@ -133,3 +133,17 @@
     @apply font-sans;
   }
 }
+
+/* A11Y-08: OS の「視差効果を減らす」設定時はアニメーション・トランジションを無効化。
+   tw-animate-css によるドロップダウンのズーム／フェード、カード影のトランジション、
+   スムーススクロールを一括で抑止する（個別コンポーネントには手を入れない）。 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
