@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${jakarta.variable} ${mono.variable} h-full antialiased scroll-smooth`}
+      className={`${jakarta.variable} ${mono.variable} h-full antialiased motion-safe:scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
         <a
