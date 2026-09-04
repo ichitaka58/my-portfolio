@@ -30,6 +30,7 @@
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
+  --color-success: var(--success);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
@@ -62,6 +63,7 @@
   --muted-foreground: oklch(0.496 0.013 73); /* stone-500 #78716C  (変更: ニュートラルグレー→ストーン系) */
   --accent: oklch(0.596 0.145 163);       /* emerald-600  #059669  (変更: ライトグレー→エメラルド) */
   --accent-foreground: oklch(0.985 0 0);  /* white                 (変更: ほぼ黒→白) */
+  --success: oklch(0.448 0.119 151.5);    /* green-800 相当。muted 背景で本文 AA（A11Y-06） */
   --destructive: oklch(0.577 0.245 27.325); /*                     (変更なし) */
   --border: oklch(0.909 0.006 75);        /* stone-200    #E7E5E4  (変更: ニュートラル→ストーン系) */
   --input: oklch(0.909 0.006 75);         /* stone-200    #E7E5E4  (変更: ニュートラル→ストーン系) */
@@ -98,6 +100,7 @@
       --muted-foreground: oklch(0.708 0 0);
       --accent: oklch(0.269 0 0);
       --accent-foreground: oklch(0.985 0 0);
+      --success: oklch(0.792 0.209 151.7); /* green-400 相当。濃グレー背景で本文 AA（A11Y-06） */
       --destructive: oklch(0.704 0.191 22.216);
       --border: oklch(1 0 0 / 10%);
       --input: oklch(1 0 0 / 15%);
