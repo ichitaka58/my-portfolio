@@ -17,22 +17,24 @@ const ContactSection = () => {
         </div>
         <p>お仕事・勉強会など、お気軽にお問い合わせください。</p>
         <div className="flex gap-4">
-          <div className="w-8 h-8 bg-card text-card-foreground border border-border rounded flex items-center justify-center">
+          <div className="w-11 h-11 bg-card text-card-foreground border border-border rounded flex items-center justify-center">
             <a
               href="https://github.com/ichitaka58"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHubプロフィール（新しいタブで開く）"
+              className="w-full h-full flex items-center justify-center"
             >
               <FaGithub aria-hidden="true" />
             </a>
           </div>
-          <div className="w-8 h-8 bg-card text-card-foreground border border-border rounded flex items-center justify-center">
+          <div className="w-11 h-11 bg-card text-card-foreground border border-border rounded flex items-center justify-center">
             <a
               href="https://x.com/taka_ichi58"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X（旧Twitter）プロフィール（新しいタブで開く）"
+              className="w-full h-full flex items-center justify-center"
             >
               <FaXTwitter aria-hidden="true" />
             </a>
