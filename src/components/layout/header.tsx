@@ -61,7 +61,7 @@ const Header = () => {
           <div className="sm:hidden no-print">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button aria-label="メニューを開く">
+                <button aria-label="メニューを開く" className="p-2.5 -m-2.5">
                   <Menu aria-hidden="true" />
                 </button>
               </DropdownMenuTrigger>
