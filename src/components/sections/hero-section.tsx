@@ -35,7 +35,7 @@ const HeroSection = () => {
           Over50でプログラミングを始めた人
         </p>
         <div>
-          <h3 className="text-center mb-4 font-semibold text-foreground/70">GitHub Contributions</h3>
+          <h2 className="text-center mb-4 font-semibold text-foreground/70">GitHub Contributions</h2>
           <img src="https://ghchart.rshah.org/ichitaka58" alt="ichitaka58's Github chart" className="w-full max-w-[720px]" />
         </div>
       </div>
