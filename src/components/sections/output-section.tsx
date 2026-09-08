@@ -19,7 +19,9 @@ const OutputSection = async () => {
           Articles
         </h2>
         <p className="text-muted-foreground mb-6 pl-4">
-          <span className="text-[#478000] dark:text-[#7cc800] font-bold">Qiita</span>
+          <span className="text-[#478000] dark:text-[#7cc800] font-bold">
+            Qiita
+          </span>
           に投稿した記事一覧です
         </p>
         {!result.ok ? (
@@ -34,7 +36,7 @@ const OutputSection = async () => {
                 href={article.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 bg-card text-card-foreground border border-border rounded-lg shadow hover:shadow-lg"
+                className="p-6 bg-card text-card-foreground border border-border rounded-lg shadow hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <p>{article.title}</p>
                 <span className="sr-only">（新しいタブで開く）</span>
