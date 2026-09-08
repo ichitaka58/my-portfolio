@@ -69,7 +69,7 @@ const WorksSection = async () => {
                           href={work.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-0.5"
+                          className="flex items-center gap-0.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
                         >
                           <FaGithub size={14} aria-hidden="true" />
                           <span>GitHub</span>
@@ -81,7 +81,7 @@ const WorksSection = async () => {
                           href={work.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-0.5"
+                          className="flex items-center gap-0.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
                         >
                           <SquareArrowOutUpRight size={14} aria-hidden="true" />
                           <span>Demo</span>
