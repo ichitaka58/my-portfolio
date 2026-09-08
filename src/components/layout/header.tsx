@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card backdrop-blur-sm border-b border-border px-6 py-4">
       <div className="max-w-4xl mx-auto flex items-center justify-between">
-        <Link href="#">
+        <Link href="/">
           <Image
             src="/ichitaka58_logo_navy.png"
             alt="ichitaka58 - トップへ戻る"
