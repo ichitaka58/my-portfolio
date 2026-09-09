@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="max-w-4xl mx-auto p-10">
         <h2
           id="about-heading"
-          className="font-extrabold text-2xl border-l-4 border-primary pl-3 mb-4"
+          className="font-extrabold text-2xl border-l-4 border-primary pl-3 mb-6"
         >
           ABOUT ME
         </h2>
@@ -18,13 +18,13 @@ const AboutSection = () => {
           </p>
           <p className="mb-2">
             放送局で主に番組編成、バックオフィス、マネジメントを経験。30年以上勤め2025年退社。
-            <br />
+          </p>
+          <p className="mb-2">
             起業家×エンジニア養成学校
             <span className="font-bold text-lg">G&apos;s</span>
-            （ジーズ：旧ジーズアカデミー）に入学、
-            <br />
-            毎日6〜11時間をプログラミング、アプリ開発に没頭し、2025年10月卒業。
-            <br />
+            （ジーズ：旧ジーズアカデミー）に入学、毎日6〜11時間をプログラミング、アプリ開発に没頭し、2025年10月卒業。
+          </p>
+          <p className="mb-2">
             その後も、独学＆G&apos;sコミュニティーで学習を継続しています。これまでの経験とアプリ開発の学びを生かして誰かのお役に立つことが望みです。
           </p>
           <p>
@@ -34,28 +34,28 @@ const AboutSection = () => {
             <span className="font-bold text-primary text-lg">Next.js</span>
             を使ったアプリのコードを書いています。
           </p>
-          <p className="mb-2">
-            学習においては、AIの助けは借りつつも、できるだけ自力で解決するのが好きです。
-            <br />
-            一方で、AIによるコーディング全盛時代、「何をつくるか」がより重要になってきたことも意識しています。
+          <p className="mb-6">
+            学習においては、AIの助けは借りつつも、できるだけ自力で解決するのが好きです。一方で、AIによるコーディング全盛時代、「何をつくるか」がより重要になってきたことも意識しています。
           </p>
           <p>
             <span className="font-semibold">✅今年度の目標</span>:
             <span className="pl-2">
               <span className="font-semibold">GitHub</span>の
-              <span className="text-lg font-semibold text-success">&quot;草&quot;</span>
+              <span className="text-lg font-semibold text-success">
+                &quot;草&quot;
+              </span>
               を絶やさないこと
             </span>
           </p>
           <p>
-            <span className="font-semibold">✅趣 味</span>:
+            <span className="font-semibold tracking-widest">✅趣味</span>:
             <span className="text-red-600 dark:text-red-400 font-semibold text-lg pl-2">
               森高千里
             </span>
             さんの推し活、ヒップホップ（24年間継続中）、焼鳥
           </p>
           <p>
-            <span className="font-semibold">✅特 技</span>:
+            <span className="font-semibold tracking-widest">✅特技</span>:
             <span className="pl-2">数独、キラーナンプレ（最速1分3秒）</span>
           </p>
         </div>
