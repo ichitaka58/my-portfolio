@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-2 mb-10">
           <Image
             src="/ichitaka58_logo.png"
-            alt="ichitaka58のアイコン"
+            alt=""
             width={80}
             height={80}
             className="rounded-full aspect-square"
