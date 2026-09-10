@@ -36,7 +36,7 @@ const HeroSection = () => {
         </p>
         <div>
           <h2 className="text-center mb-4 font-semibold text-foreground/70">GitHub Contributions</h2>
-          <img src="https://ghchart.rshah.org/ichitaka58" alt="ichitaka58's Github chart" className="w-full max-w-[720px]" />
+          <img src="https://ghchart.rshah.org/ichitaka58" alt="ichitaka58 の直近1年間の GitHub コントリビューション状況（ヒートマップ）" width={663} height={104} className="w-full max-w-[720px] h-auto" />
         </div>
       </div>
     </section>
