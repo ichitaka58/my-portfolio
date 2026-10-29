@@ -1,4 +1,8 @@
+import { Badge } from "../ui/badge";
+
 const SkillsSection = () => {
+  const FREQUENTLY_USED_SKILLS = ["TypeScript", "React", "Next.js", "PHP/Laravel", "TailwindCSS", "JavaScript", "GitHub"];
+  const USED_IN_APP_SKILLS = ["Python", "Hono", "GitHub Actions", "Docker", "Cloudflare", "Firebase"];
   return (
     <section
       id="skills"
@@ -13,41 +17,54 @@ const SkillsSection = () => {
         >
           Skills & Learning
         </h2>
-        <div className="flex flex-col sm:flex-row items-center flex-wrap gap-8 pl-4 mb-8">
+        <p className="text-muted-foreground mb-6 pl-4">
+          これまでに学んだ言語やライブラリ、ツール等です。<br></br>
+          開発現場経験はありませんので、学習経験、個人開発レベルとなります。
+        </p>
+        <h3 className="text-foreground mb-6 pl-4">▪️使用頻度の多いもの</h3>
+        <div className="flex flex-wrap gap-1 mb-6 pl-6">
+          {FREQUENTLY_USED_SKILLS.map((skill) => (
+            <Badge
+              key={skill}
+              className="shadow text-xs bg-primary/70 font-bold"
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+        <img
+          src="https://skillicons.dev/icons?i=typescript,react,nextjs,php,laravel,tailwind,js,github"
+          alt="スキルアイコン"
+          className="mb-6 pl-6"
+        />
+        <h3 className="text-foreground mb-6 pl-4">▪️アプリで使用経験あり</h3>
+        <div className="flex flex-wrap gap-1 mb-6 pl-6">
+          {USED_IN_APP_SKILLS.map((skill) => (
+            <Badge
+              key={skill}
+              className="shadow text-xs  bg-primary/70 font-bold"
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+        <div className="flex gap-2 mb-6 pl-6">
+          <img src="https://skillicons.dev/icons?i=python" alt="" />
+          <img src="https://skills.syvixor.com/api/icons?i=hono" alt="" />
           <img
-            src="/laravel-logolockup-rgb-red.svg"
-            alt="Laravel"
-            width={240}
-            className="object-cover"
-          />
-          <img
-            src="/react-logo.svg"
-            alt="React"
-            width={100}
-            className="object-contain justify-items-center"
-          />
-          <img
-            src="/ts-lettermark-blue.svg"
-            alt="TypeScript"
-            width={240}
-            className="object-contain ml-4"
-          />
-          <img
-            src="/nextjs-logotype-light-background.svg"
-            alt="Next.js"
-            width={240}
-            className="object-contain ml-4 dark:invert"
-          />
-          <img
-            src="/GitHub_Lockup_Black.svg"
-            alt="GitHub"
-            width={240}
-            className="object-contain ml-4 dark:invert"
+            src="https://skillicons.dev/icons?i=githubactions,docker,cloudflare,firebase"
+            alt=""
           />
         </div>
-        <p className="text-muted-foreground text-center">
-          このほか、Docker、Python..なども使っています。
-        </p>
+        <h3 className="text-foreground mb-6 pl-4">
+          ▪️AWS :
+          エクスパンション講座2回受講し、ハンズオンでEC2へのデプロイを経験
+        </h3>
+        <img
+          src="https://skillicons.dev/icons?i=aws"
+          alt=""
+          className="mb-6 pl-6"
+        />
       </div>
     </section>
   );
