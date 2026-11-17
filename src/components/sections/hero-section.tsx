@@ -31,8 +31,7 @@ const HeroSection = () => {
           </h1>
         </div>
         <p className="text-xs sm:text-base mb-10 sm:pl-10">
-          30年以上勤めたTV業界を退社<br></br>
-          Over50でプログラミングを始めた人
+          ＴＶ業界30年以上 × エンジニア挑戦。
         </p>
         <div>
           <h2 className="text-center mb-4 font-semibold text-foreground/70">GitHub Contributions</h2>
